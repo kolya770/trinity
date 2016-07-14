@@ -1,0 +1,104 @@
+.teachers {
+  background-color: $color-5;
+  .header-text-g-w {
+    font-family: $bold-font;
+    font-size: 3em;
+    line-height: 1.2;
+    color: $color-1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+  .btn-reviews {
+    font-size: 1.25em;
+    font-family: $semi-bold-font;
+    width: 169px;
+    height: 53px;
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+  .reviews-text {
+    font-size: 1.5em;
+    font-family: $bold-font;
+    color: $color-3;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 100px;
+    display: inline-block;
+  }
+  .reviews-link {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $color-2;
+    font-size: 1em;
+    margin: 0;
+  }
+  .position-text {
+    float: right;
+  }
+  .b-profile {
+    margin: 150px auto 0 auto;
+    background-color: #25718f;
+    width: 100%;
+    min-height: 177px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    .text-reviews {
+      padding: 35px 60px 15px 60px;
+      h2 {
+        font-family: $bold-font;
+        color:  $color-1;
+        font-size: 1em;
+        text-align: left;
+        margin-top: 5px;
+        line-height: 20px;
+      }
+      span {
+        font-family: $semi-bold-font;
+        color: $color-1;
+        font-size: 0.938em;
+      }
+    }
+  }
+  .diploma {
+    background-color: #25718f;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 10px 30px 5px 30px;
+    min-height: 90px;
+    text-align: center;
+    margin-bottom: 150px;
+    .diploma-img {
+      margin-bottom: 5px;
+    }
+  }
+  .avatar__section {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    transform: translatex(-50%);
+  }
+  .main-avatar {
+    padding: 10px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    background-color: #ebebeb;
+  }
+  .teach-2 {
+    background-color: $color-4;
+  }
+  .main-avatar__image {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+  }
+}
+
+
+
+

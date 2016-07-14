@@ -1,0 +1,187 @@
+.reviews {
+  background-color: $color-4;
+  @media #{$bootstrap-xs} {
+    padding-bottom: 80px;
+  }
+  @media #{$bootstrap-sm} {
+    padding-bottom: 80px;
+  }@media #{$bootstrap-md} {
+  padding-bottom: 200px;
+}
+
+  .btn-reviews {
+    font-size: 1.25em;
+    font-family: $semi-bold-font;
+    width: 169px;
+    height: 53px;
+    margin-left: 20px;
+    padding: 0;
+    @media #{$bootstrap-xs} {
+      margin-top: 30px;
+    }
+    @media #{$bootstrap-sm} {
+      margin-top: 30px;
+    }
+    @media #{$bootstrap-md} {
+      margin-top: 90px;
+    }
+  }
+  .mobile-div-1 {
+    @media #{$bootstrap-xs} {
+      text-align: center;
+    }
+    @media #{$bootstrap-sm} {
+      text-align: center;
+    }
+  }
+  .mobile-div-2 {
+    @media #{$bootstrap-xs} {
+      text-align: center;
+    }
+    @media #{$bootstrap-sm} {
+      text-align: center;
+    }
+    @media #{$bootstrap-md} {
+      text-align: left;
+    }
+  }
+  .reviews-text {
+    font-size: 1.5em;
+    font-family: $bold-font;
+    color: $color-3;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 100px;
+    display: inline-block;
+    @media #{$bootstrap-xs} {
+      text-align: center;
+      margin-top: 60px;
+    }
+    @media #{$bootstrap-sm} {
+      text-align: center;
+      margin-top: 60px;
+    }
+    @media #{$bootstrap-md} {
+      text-align: left;
+      margin-top: 100px;
+    }
+  }
+  .link-to-fb {
+    @media #{$bootstrap-xs} {
+      text-align: right;
+      float: right;
+      margin-right: 10%;
+      font-size: 0.750em;
+      margin-top: 42px;
+    }
+    @media #{$bootstrap-sm} {
+      text-align: right;
+      margin-top: 60px;
+      float: right;
+      margin-right: 10%;
+    }
+  }
+  .reviews-link {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $color-2;
+    font-size: 1em;
+    margin: 0;
+  }
+  .position-text {
+    @media #{$bootstrap-xs} {
+      text-align: center;
+      margin-left: 0;
+    }
+    @media #{$bootstrap-sm} {
+      text-align: center;
+      margin-left: 0;
+    }
+    @media #{$bootstrap-md} {
+      float: right;
+    }
+  }
+  @media #{$bootstrap-xs} {
+    .mob-try {
+      font-size: 1.125em;
+      margin-top: 22px;
+    }
+    .mob-btn-rew {
+      width: 128px;
+      height: 39px;
+      border-radius: 17px;
+      font-size: 0.938em;
+    }
+  }
+  .dop-ygol {
+    position: relative;
+    left: 50%;
+    width: 49px;
+    display: inline-block;
+    margin-left: -24.5px;
+    margin-top: -1px;
+  }
+  .b-profile {
+    margin: 150px auto 0 auto;
+    background-color: #257096;
+    min-height: 177px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    @media #{$bootstrap-xs} {
+      width: 80%;
+      margin-top: 120px;
+      margin-bottom: 18px;
+    }
+    @media #{$bootstrap-sm} {
+      width: 80%;
+    }
+    @media #{$bootstrap-md} {
+      width: 100%;
+    }
+    .text-reviews {
+      padding-top: 15px;
+      h2 {
+        font-family: $semi-bold-font;
+        color:  $color-1;
+        font-size: 0.938em;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: right;
+        margin: 0;
+        padding-right: 25px;
+        padding-bottom: 15px;
+      }
+      p {
+        font-family: $semi-bold-font;
+        color:  $color-1;
+        font-size: 0.938em;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        padding: 25px 25px 10px 25px;
+        margin: 0;
+      }
+    }
+  }
+  .avatar__section {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    transform: translatex(-50%);
+  }
+  .main-avatar {
+    padding: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    background-color: #257096;
+  }
+  .main-avatar__image {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,43 @@
+.navbar-trinity {
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  margin-bottom: 0;
+  height: 103px;
+  width: 100%;
+  z-index: 9999;
+
+  .navbar-nav li {
+    a {
+      font-size: 1.5em;
+      font-family: $semi-bold-font;
+      color: $color-1;
+      padding: 40px;
+      &:hover {
+        color: $color-2;
+      }
+    }
+    .phone-number {
+      margin-bottom: 0;
+      font-size: 1.875em;
+      font-family: $semi-bold-font;
+      color: $color-1;
+      padding: 30px 40px;
+    }
+    .logo-block {
+      padding: 0 40px 0 0;
+    }
+  }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+

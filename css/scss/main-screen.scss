@@ -1,0 +1,85 @@
+.main-screen {
+  background: url('../img/main-photo.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  .header-text {
+    font-size: 60px;
+    font-family: $ex-font;
+    color: $color-1;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30vh;
+    margin-bottom: 7vh;
+  }
+  .block-information {
+    text-align: center;
+    .body-text {
+      font-size: 1.5em;
+      font-family: $light-font;
+      color: $color-1;
+      line-height: 1.2;
+    }
+    .dot {
+      margin-top: 75px;
+    }
+  }
+}
+
+.col-xs-c-1 {
+  width: 9.09%;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+.col-xs-c-3 {
+  width: 27.27%;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+.block-size {
+  width: 75%;
+  min-height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+.btn-main {
+  width: 422px;
+  height: 67px;
+  font-family: $bold-font;
+  font-size: 1.5em;
+  margin-top: 10vh;
+}
+.btn-red {
+  border-radius: 33px;
+  background-color: rgb(223, 109, 109);
+  box-shadow: inset 0px -3px 7px 0px rgba(192, 83, 83, 0.75);
+  color: $color-1;
+  line-height: 1.2;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: rgb(196, 94, 94);
+    box-shadow: inset 0px -3px 7px 0px rgba(192, 83, 83, 0.75);
+    outline: none;
+    color: $color-1;
+  }
+  &:focus:active {
+    background-color: rgb(196, 94, 94);
+    box-shadow: inset 0px -3px 7px 0px rgba(192, 83, 83, 0.75);
+    outline: none;
+    color: $color-1;
+  }
+  &:focus {
+    background-color: rgb(196, 94, 94);
+    box-shadow: inset 0px -3px 7px 0px rgba(192, 83, 83, 0.75);
+    outline: none;
+    color: $color-1;
+  }
+}
+
+
+

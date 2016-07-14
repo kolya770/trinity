@@ -1,0 +1,173 @@
+.contacts {
+  .header-text-g-w {
+    font-family: $bold-font;
+    font-size: 3em;
+    line-height: 1.2;
+    color: $color-1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .contacts-header {
+    color: $color-1;
+    font-family: $bold-font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .contacts-text {
+    color: $color-1;
+    font-family: $semi-bold-font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.left-block {
+  display: inline-block;
+  float: left;
+  width: 37%;
+  background-color: $color-2;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.right-block {
+  display: inline-block;
+  float: left;
+  width: 63%;
+  background-color: $color-5;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.btn-contacts {
+  width: 40px;
+  height: 40px;
+  background-color: $color-1;
+  color: $color-2;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  padding: 0;
+  outline: none;
+  margin-top: 30px;
+  &:hover {
+    background-color: $color-5;
+    outline: none;
+    color: $color-1;
+  }
+  &:focus:active {
+    background-color: $color-5;
+    outline: none;
+    color: $color-1;
+  }
+  &:focus {
+    background-color: $color-5;
+    outline: none;
+    color: $color-1;
+  }
+}
+.contacts-quest-text {
+  color: $color-1;
+  font-family: $ex-font;
+  font-size: 1.250em;
+  margin-right: 20px;
+}
+.text-block {
+  height: 28px;
+  margin-bottom: 20px;
+}
+.send-form {
+  width: 100%;
+  background-color: #25718f;
+  border-radius: 10px;
+  padding: 11px;
+  margin-bottom: 150px;
+
+  .icon-form {
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
+  .input-form {
+    width: calc(100% + 25px);
+    height: 44px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .textarea-block {
+    width: calc(100% + 25px);
+    max-height: 300px;
+    resize: none;
+  }
+  .text-enter {
+    color: #575757;
+    font-family: $semi-bold-font;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .btn-send-message {
+    width: 158px;
+    height: 52px;
+    background-color: white;
+    border-radius: 26px;
+    font-size: 1.188em;
+    font-family: $semi-bold-font;
+    color: $color-3;
+    outline: none;
+    float: right;
+    border: none;
+    &:hover {
+      background-color: $color-1;
+      outline: none;
+      color: #297e9f;
+    }
+    &:focus:active {
+      background-color: $color-1;
+      outline: none;
+      color: #297e9f;
+    }
+    &:focus {
+      background-color: $color-1;
+      outline: none;
+      color: #297e9f;
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: #575757;
+    font-family: $semi-bold-font;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  ::-moz-placeholder          {
+    color: #575757;
+    font-family: $semi-bold-font;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  :-moz-placeholder           {
+    color: #575757;
+    font-family: $semi-bold-font;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  :-ms-input-placeholder      {
+    color: #575757;
+    font-family: $semi-bold-font;
+    font-size: 1em;
+    font-weight: 700;
+  }
+}

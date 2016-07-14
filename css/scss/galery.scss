@@ -1,0 +1,35 @@
+.gallery {
+  background-color: $color-4;
+  padding-bottom: 230px;
+  .image-gallery {
+    width: 100%;
+  }
+  .new-padding {
+    padding: 5px;
+  }
+}
+
+.dop-line {
+  background-color: #ebebeb;
+  text-align: center;
+  .triangle {
+    margin-top: -1px;
+    margin-bottom: 15px;
+  }
+}
+
+.header-text-g {
+  font-family: $bold-font;
+  font-size: 3em;
+  line-height: 1.2;
+  color: $color-3;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media #{$bootstrap-xs} {
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
