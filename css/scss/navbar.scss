@@ -13,7 +13,19 @@
       font-size: 1.5em;
       font-family: $semi-bold-font;
       color: $color-1;
-      padding: 40px;
+      padding: 40px 4vh;
+      @media (max-width: 1720px) {
+        padding: 40px 2vh;
+      }
+      @media (max-width: 1480px) {
+        padding: 40px 1vh;
+        font-size: 1.3em;
+      }
+      @media (max-width: 1200px) {
+        padding: 40px 0.9vh;
+        font-size: 1.1em;
+      }
+
       &:hover {
         color: $color-2;
       }
@@ -24,6 +36,15 @@
       font-family: $semi-bold-font;
       color: $color-1;
       padding: 30px 40px;
+      @media (max-width: 1480px) {
+        padding: 35px 1vh;
+        font-size: 1.5em;
+
+      }
+      @media (max-width: 1200px) {
+        padding: 37px 0.7vh;
+        font-size: 1.2em;
+      }
     }
     .logo-block {
       padding: 0 40px 0 0;

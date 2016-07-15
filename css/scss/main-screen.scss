@@ -5,24 +5,77 @@
   width: 100%;
   text-align: center;
   .header-text {
-    font-size: 60px;
+
     font-family: $ex-font;
     color: $color-1;
     line-height: 1.2;
     text-align: center;
     margin-top: 30vh;
     margin-bottom: 7vh;
+    @media #{$bootstrap-xs} {
+      font-size: 1.8em;
+    }
+    @media #{$bootstrap-sm} {
+      font-size: 3em;
+    }
+    @media #{$bootstrap-lg} {
+      font-size: 3.750em;
+    }
   }
   .block-information {
     text-align: center;
+    @media #{$bootstrap-xs} {
+      float: left;
+      margin-bottom: 15px;
+    }
+    @media #{$bootstrap-sm} {
+      float: left;
+      margin-bottom: 15px;
+    }
+    @media #{$bootstrap-md} {
+      float: none;
+      margin-bottom: 0;
+    }
     .body-text {
       font-size: 1.5em;
       font-family: $light-font;
       color: $color-1;
       line-height: 1.2;
+      @media #{$bootstrap-xs} {
+        float: left;
+        margin-top: 20px;
+      }
+      @media #{$bootstrap-sm} {
+        float: left;
+        margin-top: 20px;
+      }
+      @media #{$bootstrap-md} {
+        float: none;
+        margin-top: 0;
+      }
+      @media (max-width: 550px) {
+        margin-top: 7px;
+      }
     }
     .dot {
       margin-top: 75px;
+    }
+    img {
+      @media #{$bootstrap-xs} {
+        float: left;
+        margin-right: 10px;
+      }
+      @media #{$bootstrap-sm} {
+        float: left;
+        margin-right: 10px;
+      }
+      @media #{$bootstrap-md} {
+        float: none;
+      }
+      @media (max-width: 550px) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
@@ -34,17 +87,33 @@
   float: left;
 }
 .col-xs-c-3 {
-  width: 27.27%;
   position: relative;
   min-height: 1px;
   float: left;
+  @media #{$bootstrap-xs} {
+    width: auto;
+  }
+  @media #{$bootstrap-sm} {
+    width: auto;
+  }
+  @media #{$bootstrap-md} {
+    width: 27.27%;
+  }
 }
 
 .block-size {
-  width: 75%;
   min-height: 100px;
   position: relative;
   margin: 0 auto;
+  @media #{$bootstrap-xs} {
+    width: 410px;
+  }
+  @media #{$bootstrap-sm} {
+    width: 410px;
+  }
+  @media #{$bootstrap-md} {
+    width: 75%;
+  }
 }
 .btn-main {
   width: 422px;
@@ -52,6 +121,12 @@
   font-family: $bold-font;
   font-size: 1.5em;
   margin-top: 10vh;
+  @media (max-width: 550px) {
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
 }
 .btn-red {
   border-radius: 33px;
