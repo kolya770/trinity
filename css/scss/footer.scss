@@ -1,6 +1,9 @@
 .footer {
   background-color: $color-5;
   height: 75px;
+  @media  (max-width: 420px) {
+   height: 50px;
+  }
   .footer-text {
     font-size: 1.3em;
     font-family: $semi-bold-font;
@@ -8,6 +11,18 @@
     color: $color-1;
     text-align: left;
     margin-top: 25px;
+
+    @media #{$bootstrap-xs} {
+      font-size: 0.9em;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    @media  (max-width: 420px) {
+      font-size: 0.67em;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 20px;
+    }
   }
   .copyright {
     text-align: right;

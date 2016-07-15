@@ -1,7 +1,7 @@
 .reviews {
   background-color: $color-4;
   @media #{$bootstrap-xs} {
-    padding-bottom: 80px;
+    padding-bottom: 5px;
   }
   @media #{$bootstrap-sm} {
     padding-bottom: 80px;
@@ -124,13 +124,12 @@
   .b-profile {
     margin: 150px auto 0 auto;
     background-color: #257096;
-    min-height: 177px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
     @media #{$bootstrap-xs} {
       width: 80%;
-      margin-top: 120px;
+      margin-top: 86px;
       margin-bottom: 18px;
     }
     @media #{$bootstrap-sm} {
@@ -151,6 +150,10 @@
         margin: 0;
         padding-right: 25px;
         padding-bottom: 15px;
+        @media #{$bootstrap-xs} {
+          font-size: 0.625em;
+          line-height: 13px;
+        }
       }
       p {
         font-family: $semi-bold-font;
@@ -161,6 +164,11 @@
         text-align: left;
         padding: 25px 25px 10px 25px;
         margin: 0;
+        @media #{$bootstrap-xs} {
+          font-size: 0.625em;
+          line-height: 13px;
+          padding-top: 15px;
+        }
       }
     }
   }
@@ -172,6 +180,9 @@
     -ms-transform: translatex(-50%);
     -o-transform: translatex(-50%);
     transform: translatex(-50%);
+    @media #{$bootstrap-xs} {
+      top: -86px;
+    }
   }
   .main-avatar {
     padding: 6px;
@@ -183,5 +194,9 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
+    @media #{$bootstrap-xs} {
+      width: 84px;
+      height: 84px;
+    }
   }
 }

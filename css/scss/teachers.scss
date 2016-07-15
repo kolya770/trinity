@@ -1,5 +1,8 @@
 .teachers {
   background-color: $color-5;
+  @media  (max-width: 420px) {
+    padding-bottom: 18px;
+  }
   .header-text-g-w {
     font-family: $bold-font;
     font-size: 3em;
@@ -9,6 +12,11 @@
     text-transform: uppercase;
     margin-top: 120px;
     margin-bottom: 100px;
+    @media #{$bootstrap-xs} {
+      font-size: 1.5em;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
   .btn-reviews {
     font-size: 1.25em;
@@ -40,13 +48,31 @@
   .b-profile {
     margin: 150px auto 0 auto;
     background-color: #25718f;
-    width: 100%;
     min-height: 177px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+
+    @media #{$bootstrap-xs} {
+      width: 80%;
+      margin-top: 86px;
+      margin-bottom: 18px;
+    }
+    @media #{$bootstrap-sm} {
+      width: 80%;
+    }
+    @media #{$bootstrap-md} {
+      width: 100%;
+    }
+    @media  (max-width: 420px) {
+      margin-bottom: 0;
+    }
     .text-reviews {
       padding: 35px 60px 15px 60px;
+      @media #{$bootstrap-xs} {
+        padding: 35px 30px 20px 30px;
+      }
       h2 {
         font-family: $bold-font;
         color:  $color-1;
@@ -54,11 +80,16 @@
         text-align: left;
         margin-top: 5px;
         line-height: 20px;
+        @media #{$bootstrap-xs} {
+          font-size: 0.625em;
+          line-height: 13px;
+        }
       }
       span {
         font-family: $semi-bold-font;
         color: $color-1;
         font-size: 0.938em;
+
       }
     }
   }
@@ -67,11 +98,21 @@
     border-radius: 30px;
     margin-top: 30px;
     padding: 10px 30px 5px 30px;
-    min-height: 90px;
     text-align: center;
     margin-bottom: 150px;
+    @media  (max-width: 420px) {
+     padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 5px;
+      margin-bottom: 32px;
+    }
+
     .diploma-img {
       margin-bottom: 5px;
+      @media  (max-width: 420px) {
+        width: 42px;
+        height: 30px;
+      }
     }
   }
   .avatar__section {
@@ -82,6 +123,9 @@
     -ms-transform: translatex(-50%);
     -o-transform: translatex(-50%);
     transform: translatex(-50%);
+    @media #{$bootstrap-xs} {
+      top: -86px;
+    }
   }
   .main-avatar {
     padding: 10px;
@@ -96,6 +140,10 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
+    @media #{$bootstrap-xs} {
+      width: 84px;
+      height: 84px;
+    }
   }
 }
 
