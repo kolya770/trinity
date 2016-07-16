@@ -1,4 +1,10 @@
 .contacts {
+  @media #{$bootstrap-xs} {
+    background-color: $color-5;
+  }
+  @media #{$bootstrap-sm} {
+    background-color: $color-5;
+  }
   .header-text-g-w {
     font-family: $bold-font;
     font-size: 3em;
@@ -8,21 +14,33 @@
     text-transform: uppercase;
     margin-top: 120px;
     margin-bottom: 50px;
+    @media #{$bootstrap-xs} {
+      font-size: 1.5em;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
   }
   .contacts-header {
     color: $color-1;
     font-family: $bold-font;
-    font-size: 20px;
+    font-size: 1.250em;
     line-height: 30px;
     font-weight: 700;
+    margin-top: 0;
+    @media #{$bootstrap-xs} {
+      font-size: 1.125em;
+    }
   }
   .contacts-text {
     color: $color-1;
     font-family: $semi-bold-font;
-    font-size: 20px;
+    font-size: 1.250em;
     line-height: 30px;
     font-weight: 600;
     margin: 0;
+    @media #{$bootstrap-xs} {
+      font-size: 1.125em;
+    }
   }
 }
 
@@ -81,6 +99,9 @@
   font-family: $ex-font;
   font-size: 1.250em;
   margin-right: 20px;
+  @media #{$bootstrap-xs} {
+    font-size: 1.125em;
+  }
 }
 .text-block {
   height: 28px;
@@ -91,7 +112,19 @@
   background-color: #25718f;
   border-radius: 10px;
   padding: 11px;
-  margin-bottom: 150px;
+  @media #{$bootstrap-xs} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$bootstrap-sm} {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media #{$bootstrap-md} {
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
 
   .icon-form {
     width: 44px;
@@ -103,15 +136,31 @@
     padding: 10px 0 0 0;
   }
   .input-form {
-    width: calc(100% + 25px);
     height: 44px;
     background-color: white;
     border-radius: 5px;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+    }
+    @media #{$bootstrap-sm} {
+      width: 100%;
+    }
+    @media #{$bootstrap-md} {
+      width: calc(100% + 25px);
+    }
   }
   .textarea-block {
-    width: calc(100% + 25px);
     max-height: 300px;
     resize: none;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+    }
+    @media #{$bootstrap-sm} {
+      width: 100%;
+    }
+    @media #{$bootstrap-md} {
+      width: calc(100% + 25px);
+    }
   }
   .text-enter {
     color: #575757;
@@ -169,5 +218,25 @@
     font-family: $semi-bold-font;
     font-size: 1em;
     font-weight: 700;
+  }
+}
+.mob-bg {
+  background-color: $color-2;
+  position: absolute;
+  width: 100%;
+  height: 525px;
+  @media #{$bootstrap-sm} {
+    height: 650px;
+  }
+}
+.send {
+  @media #{$bootstrap-xs} {
+    margin-top: 120px;
+  }
+  @media #{$bootstrap-sm} {
+    margin-top: 120px;
+  }
+  @media #{$bootstrap-md} {
+    margin-top: 0;
   }
 }
