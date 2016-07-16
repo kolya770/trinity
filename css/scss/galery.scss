@@ -1,11 +1,42 @@
 .gallery {
   background-color: $color-4;
   padding-bottom: 230px;
+  @media #{$bootstrap-xs} {
+    padding-bottom: 50px;
+  }
+  @media #{$bootstrap-sm} {
+    padding-bottom: 50px;
+  }
+  @media #{$bootstrap-md} {
+    padding-bottom: 230px;
+  }
   .image-gallery {
-    width: 100%;
+    width: 33%;
+    margin-bottom: 4px;
+    padding: 1%;
+    @media #{$bootstrap-xs} {
+      width: 49%;
+    }
+    @media #{$bootstrap-sm} {
+      width: 49%;
+    }
+    @media #{$bootstrap-md} {
+      width: 33%;
+    }
+  }
+  a:hover {
+    text-decoration: none;
   }
   .new-padding {
     padding: 5px;
+  }
+  @media (max-width: 992px) {
+    div#lightgallery a:nth-child(odd) img {
+      padding-left: 7%;
+    }
+    div#lightgallery a:nth-child(even) img {
+      padding-right: 7%;
+    }
   }
 }
 

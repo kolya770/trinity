@@ -6,7 +6,7 @@
   margin-bottom: 0;
   height: 103px;
   width: 100%;
-  z-index: 9999;
+  z-index: 777;
 
   .navbar-nav li {
     a {
@@ -28,6 +28,12 @@
 
       &:hover {
         color: $color-2;
+      }
+      &:active:focus {
+        color: $color-1;
+      }
+      &:focus {
+        color: $color-1;
       }
     }
     .phone-number {
