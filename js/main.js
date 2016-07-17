@@ -38,6 +38,8 @@ $(document).ready(function () {
         $('body').removeClass("modal-open-noscroll");
     });
 
+
+
 });
 
 //jQuery to collapse the navbar on scroll
