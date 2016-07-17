@@ -46,6 +46,16 @@ body {
   font-style: normal;
 }
 
+//fix popup
+body.modal-open-noscroll {
+  margin-right: 0 !important;
+  overflow: hidden;
+}
+
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+  margin-right: 0 !important;
+}
+
 $semi-bold-font: "semibold", sans-serif;
 $bold-font: "bold", sans-serif;
 $ex-font: "ex", sans-serif;
@@ -74,5 +84,6 @@ $bootstrap-lg: "(min-width:1200px)";
 @import "lessons";
 @import "teachers";
 @import "contacts";
+@import "popup";
 @import "lg-mixins";
 @import "lg-animations";
