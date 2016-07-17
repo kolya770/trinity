@@ -1,0 +1,124 @@
+.popup-group {
+  .modal-dialog {
+    position: absolute;
+    left: 50%;
+    @media #{$bootstrap-xs} {
+      width: 90%;
+      min-height: 300px;
+      margin-left: -45%;
+    }
+    @media #{$bootstrap-sm} {
+      width: 700px;
+      min-height: 300px;
+      margin-left: -350px;
+    }
+    .modal-content {
+      border-radius: 30px;
+      background-color: $color-1;
+      @media #{$bootstrap-xs} {
+        width: 100%;
+        min-height: 300px;
+      }
+      @media #{$bootstrap-sm} {
+        width: 100%;
+        min-height: 300px;
+      }
+      .modal-header {
+        border: none;
+        h2 {
+          color: $color-3;
+          font-size: 1.500em;
+          font-family: $bold-font;
+          text-align: center;
+        }
+        .close {
+          position: absolute;
+          right: 30px;
+          top: 30px;
+        }
+      }
+      .modal-body {
+
+        h3 {
+          color: $color-3;
+          font-size: 1.250em;
+          font-family: $bold-font;
+          text-align: center;
+        }
+        p {
+          color: $color-3;
+          font-size: 1em;
+          font-family: $semi-bold-font;
+          text-align: center;
+        }
+
+      }
+      .message-body {
+        text-align: center;
+        .number-form {
+          width: 80%;
+          margin: 30px auto;
+        }
+        .icon-form {
+          width: 44px;
+          height: 44px;
+          background-color: #e3e3e3;;
+          border-radius: 5px;
+          margin-left: 15px;
+          text-align: center;
+          padding: 10px 0 0 0;
+        }
+        .input-form {
+          height: 44px;
+          background-color: #e3e3e3;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          @media #{$bootstrap-xs} {
+            width: 100%;
+          }
+          @media #{$bootstrap-sm} {
+            width: 100%;
+          }
+          @media #{$bootstrap-md} {
+            width: calc(100% + 25px);
+          }
+        }
+      }
+      .modal-footer {
+        border: none;
+        text-align: center;
+        h2 {
+          color: $color-3;
+          font-size: 1.500em;
+          font-family: $bold-font;
+          text-align: center;
+        }
+        .box-time {
+          width: 185px;
+          height: 270px;
+          background-color: #f1efef;
+          border-radius: 10px;
+          margin: 15px auto 45px;
+          .weeks-day {
+            text-align: left;
+            font-size: 0.938em;
+            font-family:$bold-font;
+            padding: 15px 20px 0 20px;
+            .day {
+              margin-right: 20px;
+            }
+          }
+        }
+        .btn-try {
+          border-radius: 26px;
+          color: $color-1;
+          font-size: 1.375em;
+          width: 205px;
+          height: 62px;
+          margin: 30px auto;
+        }
+      }
+    }
+  }
+}
