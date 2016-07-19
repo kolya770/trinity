@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     var md = new MobileDetect(window.navigator.userAgent);
@@ -15,8 +13,20 @@ $(document).ready(function () {
 
     }
 
-
     $("#lightgallery").lightGallery({
+        thumbnail:true,
+        mode: 'lg-slide-circular'
+    });
+
+    $("#gallery-diploma-1").lightGallery({
+        thumbnail:true,
+        mode: 'lg-slide-circular'
+    });
+    $("#gallery-diploma-2").lightGallery({
+        thumbnail:true,
+        mode: 'lg-slide-circular'
+    });
+    $("#gallery-diploma-1-m").lightGallery({
         thumbnail:true,
         mode: 'lg-slide-circular'
     });
@@ -37,8 +47,6 @@ $(document).ready(function () {
     modal.on('hide.bs.modal', function () {
         $('body').removeClass("modal-open-noscroll");
     });
-
-
 
 });
 
