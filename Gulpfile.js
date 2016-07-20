@@ -6,7 +6,8 @@ var gulp          = require('gulp'),
     plumber       = require('gulp-plumber'),
     uglify        = require('gulp-uglify'),
     concat        = require('gulp-concat'),
-    csso          = require('gulp-csso');
+    csso          = require('gulp-csso'),
+    imagemin      = require('gulp-imagemin');
 
 // HTML
 
@@ -47,6 +48,14 @@ gulp.task('js', function() {
         .pipe(gulp.dest('js/')); // результат пишем по указанному адресу
 });
 
+// IMAGE
+
+gulp.task('images', function() {
+    gulp.src('img/**/*') // берем любые файлы в папке и ее подпапках
+        .pipe(imagemin()) // оптимизируем изображения для веба
+        .pipe(gulp.dest('img/')); // результат пишем по указанному адресу
+});
+
 // WATCH
 
 var paths = {
@@ -72,7 +81,6 @@ gulp.task('connect', function() {
 
 gulp.task('default',  [
     'connect',
-    // 'basicshopStyles',
     'styles',
     'watch'
 ]);
