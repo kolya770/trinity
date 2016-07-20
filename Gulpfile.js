@@ -31,17 +31,18 @@ gulp.task('styles', function() {
 // JS
 gulp.task('js', function() {
     gulp.src([
-        'partials/js/jquery-2.0.0.min.js',
-        'partials/js/bootstrap.min.js',
-        'partials/js/mobile-detect.min.js',
-        'partials/js/jquery.easing.min.js',
-        'partials/js/lightgallery.js',
-        'partials/js/jquery.mousewheel.min.js',
-        'partials/lg-thumbnail.js',
-        'partials/js/lg-fullscreen.js',
-        'partials/js/jquery.fade-this.js',
-        'partials/js/pushy.min.js',
-        'partials/js/main.js'
+        'js/partials/map.js',
+        'js/partials/jquery-2.0.0.min.js',
+        'js/partials/bootstrap.min.js',
+        'js/partials/mobile-detect.min.js',
+        'js/partials/jquery.easing.min.js',
+        'js/partials/lightgallery.js',
+        'js/partials/jquery.mousewheel.min.js',
+        'js/partials/lg-thumbnail.js',
+        'js/partials/lg-fullscreen.js',
+        'js/partials/jquery.fade-this.js',
+        'js/partials/pushy.min.js',
+        'js/partials/main.js'
     ]) // файлы, которые обрабатываем
         .pipe(concat('main.min.js')) // склеиваем все JS
         .pipe(uglify()) // получившуюся "портянку" минифицируем
