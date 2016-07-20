@@ -2,11 +2,11 @@ var gulp          = require('gulp'),
     connect       = require('gulp-connect'),
     sass          = require('gulp-sass'),
     prefix        = require('gulp-autoprefixer'),
-    minifyCSS     = require('gulp-minify-css'),
     autowatch     = require('gulp-autowatch'),
     plumber       = require('gulp-plumber'),
-    uglify        = require('gulp-uglify');
-
+    uglify        = require('gulp-uglify'),
+    concat        = require('gulp-concat'),
+    csso          = require('gulp-csso');
 
 // HTML
 
@@ -15,7 +15,6 @@ gulp.task('htmls', function () {
         .pipe(connect.reload());
 });
 
-
 // SCSS
 
 gulp.task('styles', function() {
@@ -23,18 +22,35 @@ gulp.task('styles', function() {
         .pipe(plumber())
         .pipe(sass())
         //.pipe(prefix([{  browsers: ['IE 8', 'IE 9', 'last 5 versions', 'Firefox 14', 'Opera 11.1']  }]))
-        .pipe(minifyCSS({keepBreaks: true}))
+        .pipe(csso())
         .pipe(gulp.dest('css'))
         .pipe(connect.reload());
 });
 
 // JS
+gulp.task('js', function() {
+    gulp.src([
+        'partials/js/jquery-2.0.0.min.js',
+        'partials/js/bootstrap.min.js',
+        'partials/js/mobile-detect.min.js',
+        'partials/js/jquery.easing.min.js',
+        'partials/js/lightgallery.js',
+        'partials/js/jquery.mousewheel.min.js',
+        'partials/lg-thumbnail.js',
+        'partials/js/lg-fullscreen.js',
+        'partials/js/jquery.fade-this.js',
+        'partials/js/pushy.min.js',
+        'partials/js/main.js'
+    ]) // файлы, которые обрабатываем
+        .pipe(concat('main.min.js')) // склеиваем все JS
+        .pipe(uglify()) // получившуюся "портянку" минифицируем
+        .pipe(gulp.dest('js/')); // результат пишем по указанному адресу
+});
 
 // WATCH
 
 var paths = {
     htmls:          ['*.html'],
-    // basicshopStyles: 'ccs/less/basicShop/*.less',
     styles:         'css/scss/**/*.scss'
 };
 

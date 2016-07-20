@@ -30,6 +30,9 @@
           font-size: 1.500em;
           font-family: $bold-font;
           text-align: center;
+          @media #{$bootstrap-xs} {
+            font-size: 1em;
+          }
         }
         .close {
           position: absolute;

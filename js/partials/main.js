@@ -15,19 +15,27 @@ $(document).ready(function () {
 
     $("#lightgallery").lightGallery({
         thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
         mode: 'lg-slide-circular'
     });
 
     $("#gallery-diploma-1").lightGallery({
         thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
         mode: 'lg-slide-circular'
     });
     $("#gallery-diploma-2").lightGallery({
         thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
         mode: 'lg-slide-circular'
     });
     $("#gallery-diploma-1-m").lightGallery({
         thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
         mode: 'lg-slide-circular'
     });
 
