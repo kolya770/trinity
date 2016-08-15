@@ -1,14 +1,6 @@
 .reviews {
   background-color: $color-4;
-  @media #{$bootstrap-xs} {
-    padding-bottom: 5px;
-  }
-  @media #{$bootstrap-sm} {
-    padding-bottom: 80px;
-  }@media #{$bootstrap-md} {
-  padding-bottom: 200px;
-}
-
+  padding: 100px 0;
   .btn-reviews {
     font-size: 1.25em;
     font-family: $semi-bold-font;
@@ -17,10 +9,10 @@
     margin-left: 20px;
     padding: 0 0 3px 0;
     @media #{$bootstrap-xs} {
-      margin-top: 30px;
+      margin-top: 10px;
     }
     @media #{$bootstrap-sm} {
-      margin-top: 30px;
+      margin-top: 10px;
     }
     @media #{$bootstrap-md} {
       margin-top: 90px;
@@ -67,6 +59,7 @@
     }
   }
   .link-to-fb {
+    margin-bottom: 0;
     @media #{$bootstrap-xs} {
       text-align: right;
       float: right;
@@ -126,10 +119,17 @@
     display: inline-block;
     margin-left: -24.5px;
     margin-top: -1px;
+    .triangle-down-re {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 30px solid $color-5;
+    }
   }
   .b-profile {
-    margin: 150px auto 0 auto;
-    background-color: #257096;
+    margin: 125px auto 0 auto;
+    background-color: $color-5;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
@@ -147,9 +147,9 @@
     .text-reviews {
       padding-top: 15px;
       h2 {
-        font-family: $semi-bold-font;
+        font-family: $reg-font;
         color:  $color-1;
-        font-size: 0.938em;
+        font-size: 1em;
         font-weight: 400;
         line-height: 20px;
         text-align: right;
@@ -162,9 +162,9 @@
         }
       }
       p {
-        font-family: $semi-bold-font;
+        font-family: $reg-font;
         color:  $color-1;
-        font-size: 0.938em;
+        font-size: 1em;
         font-weight: 300;
         line-height: 20px;
         text-align: left;

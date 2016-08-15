@@ -1,15 +1,6 @@
 .gallery {
   background-color: $color-4;
-  padding-bottom: 230px;
-  @media #{$bootstrap-xs} {
-    padding-bottom: 50px;
-  }
-  @media #{$bootstrap-sm} {
-    padding-bottom: 50px;
-  }
-  @media #{$bootstrap-md} {
-    padding-bottom: 230px;
-  }
+  padding: 100px 0;
   .image-gallery {
     width: 33%;
     margin-bottom: 4px;
@@ -43,6 +34,15 @@
 .dop-line {
   background-color: #ebebeb;
   text-align: center;
+  height: 100px;
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 75px solid $color-4;
+    margin: 0 auto;
+  }
   .triangle {
     margin-top: -1px;
     margin-bottom: 15px;
@@ -50,17 +50,16 @@
 }
 
 .header-text-g {
-  font-family: $bold-font;
+  font-family: $semi-bold-font;
   font-size: 3em;
   line-height: 1.2;
   color: $color-3;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 0;
   margin-bottom: 100px;
   @media #{$bootstrap-xs} {
     font-size: 1.5em;
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 }

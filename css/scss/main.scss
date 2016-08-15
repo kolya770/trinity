@@ -12,6 +12,16 @@ body {
 
 //Fonts
 @font-face {
+  font-family: "regular";
+  src: url("../fonts/regular.eot");
+  src: url("../fonts/regular.eot#iefix") format("embedded-opentype"),
+  url("../fonts/regular.woff") format("woff"),
+  url("../fonts/regular.ttf") format("truetype"),
+  url("../fonts/regular.svg#regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "semibold";
   src: url("../fonts/semibold.eot");
   src: url("../fonts/semibold.eot#iefix") format("embedded-opentype"),
@@ -66,6 +76,7 @@ $semi-bold-font: "semibold", sans-serif;
 $bold-font: "bold", sans-serif;
 $ex-font: "ex", sans-serif;
 $light-font: "light", sans-serif;
+$reg-font: "regular", sans-serif;
 
 //Colors
 $color-1: #ffffff;

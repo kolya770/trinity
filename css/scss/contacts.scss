@@ -6,17 +6,16 @@
     background-color: $color-5;
   }
   .header-text-g-w {
-    font-family: $bold-font;
+    font-family: $semi-bold-font;
     font-size: 3em;
     line-height: 1.2;
     color: $color-1;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top: 100px;
     @media #{$bootstrap-xs} {
       font-size: 1.5em;
-      margin-top: 50px;
       margin-bottom: 50px;
     }
   }
@@ -26,7 +25,7 @@
     font-size: 1.250em;
     line-height: 30px;
     font-weight: 700;
-    margin-top: 0;
+    margin-top: 20px;
     @media #{$bootstrap-xs} {
       font-size: 1.125em;
     }
@@ -78,6 +77,7 @@
   padding: 0;
   outline: none;
   margin-top: 30px;
+  margin-right: 5px;
   &:hover {
     background-color: $color-5;
     outline: none;
@@ -96,36 +96,23 @@
 }
 .contacts-quest-text {
   color: $color-1;
-  font-family: $ex-font;
+  font-family: $semi-bold-font;
   font-size: 1.250em;
-  margin-right: 20px;
   @media #{$bootstrap-xs} {
     font-size: 1.125em;
   }
 }
 .text-block {
   height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 .send-form {
   width: 100%;
   background-color: #25718f;
   border-radius: 10px;
   padding: 11px;
-  @media #{$bootstrap-xs} {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  @media #{$bootstrap-sm} {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  @media #{$bootstrap-md} {
-    margin-top: 0;
-    margin-bottom: 150px;
-  }
-
+  margin-bottom: 100px;
   .icon-form {
     width: 44px;
     height: 44px;
@@ -224,9 +211,9 @@
   background-color: $color-2;
   position: absolute;
   width: 100%;
-  height: 550px;
+  height: 650px;
   @media #{$bootstrap-sm} {
-    height: 650px;
+    height: 750px;
   }
 }
 .send {

@@ -43,18 +43,18 @@ gulp.task('js', function() {
         'js/partials/jquery.fade-this.js',
         'js/partials/pushy.min.js',
         'js/partials/main.js'
-    ]) // файлы, которые обрабатываем
-        .pipe(concat('main.min.js')) // склеиваем все JS
-        .pipe(uglify()) // получившуюся "портянку" минифицируем
-        .pipe(gulp.dest('js/')); // результат пишем по указанному адресу
+    ])
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('js/'));
 });
 
 // IMAGE
 
 gulp.task('images', function() {
-    gulp.src('img/**/*') // берем любые файлы в папке и ее подпапках
-        .pipe(imagemin()) // оптимизируем изображения для веба
-        .pipe(gulp.dest('img/')); // результат пишем по указанному адресу
+    gulp.src('img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img/'));
 });
 
 // WATCH

@@ -1,20 +1,20 @@
 .teachers {
   background-color: $color-5;
+  padding: 100px 0;
   @media  (max-width: 420px) {
     padding-bottom: 18px;
   }
   .header-text-g-w {
-    font-family: $bold-font;
+    font-family: $semi-bold-font;
     font-size: 3em;
     line-height: 1.2;
     color: $color-1;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 120px;
+    margin-top: 0;
     margin-bottom: 100px;
     @media #{$bootstrap-xs} {
       font-size: 1.5em;
-      margin-top: 50px;
       margin-bottom: 50px;
     }
   }
@@ -46,7 +46,7 @@
     float: right;
   }
   .b-profile {
-    margin: 150px auto 0 auto;
+    margin: 125px auto 0 auto;
     background-color: #25718f;
     min-height: 177px;
     position: relative;
@@ -99,14 +99,11 @@
     margin-top: 30px;
     padding: 10px 30px 5px 30px;
     text-align: center;
-    margin-bottom: 150px;
     @media  (max-width: 420px) {
-     padding-left: 15px;
+      padding-left: 15px;
       padding-right: 15px;
       margin-top: 5px;
-      margin-bottom: 32px;
     }
-
     .diploma-img {
       margin-bottom: 5px;
       @media  (max-width: 420px) {
